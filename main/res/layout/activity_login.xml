@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:background="#ff8844">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:padding="16dp"
+            android:background="#ffffff">
+
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:text=":"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/etEmail"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:text=":"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/etPassword"/>
+            </TableRow>
+
+            <CheckBox
+                android:id="@+id/cbRememberUser"
+                android:text="Remember User"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+            <CheckBox
+                android:id="@+id/cbRememberLogin"
+                android:text="Remember Login"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/btnSignup"
+                android:text="Don't have an account?"
+                android:layout_marginTop="32dp"/>
+        </TableLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnLoginInstructor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Login as\nInstructor"
+            android:backgroundTint="#ff4400"/>
+        <Button
+            android:id="@+id/btnLoginStudent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Login as\nStudent"
+            android:backgroundTint="#ff8800"/>
+    </LinearLayout>
+</LinearLayout>
